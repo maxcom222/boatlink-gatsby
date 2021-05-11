@@ -1,0 +1,100 @@
+.accordion {
+    .accordion__item {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 25px rgba(103, 122, 170, 0.2);
+        border-radius: 20px;
+        overflow: hidden;
+        margin-bottom: 12px;
+
+        .accordion__button {
+            background-color: #fff;
+            cursor: pointer;
+            padding: 25px 0 30px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 34px;
+            &:hover {
+                background-color: #f6f6f6;
+            }
+            &[aria-expanded='true']{
+                &:hover {
+                    background-color: #fff;
+                }
+            }
+        
+            &[aria-expanded='true']::before, [aria-selected='true']::before {
+                background: url("../images/accordion-minus.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        
+            &:before {
+                display: inline-block;
+                content: '';
+                white-space: pre;
+                height: 49px;
+                width: 69px;
+                margin-bottom: -15px;
+                margin-left: 10px;
+                margin-right: 20px;
+                border-right: 1px solid #DBDBDB;
+                background: url("../images/accordion-plus.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+
+        .accordion__panel {
+            padding: 0 20px 20px 100px;
+            animation: fadein 0.35s ease-in;
+        }
+    }
+    
+    [hidden] {
+        display: none;
+    }
+    
+}
+
+
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .accordion{
+        .accordion__item{
+            box-shadow: 0px 1.44134px 9.00838px rgba(103, 122, 170, 0.2);
+            border-radius: 7.2067px;
+
+            .accordion__button{
+                font-size: 14px;
+                line-height: 18px;
+                padding: 8px 0 8px;
+                text-indent: -76px;
+                padding-left: 76px;
+
+                &::before{
+                    width: 46px;
+                    height: 32px;
+                    vertical-align: middle;
+                }
+            }
+
+            .accordion__panel{
+                padding: 12px;
+            }
+        }
+    }
+}

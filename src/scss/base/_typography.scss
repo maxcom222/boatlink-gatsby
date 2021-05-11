@@ -1,0 +1,104 @@
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #4E5157;
+}
+.h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: $color-text-heading;
+    margin: 0;
+    padding: 0;
+    line-height: 50px;
+}
+.h2-white {
+    font-size: 40px;
+    font-weight: 600;
+    color: $color-white;
+    margin: 0;
+    padding: 0;
+    line-height: 50px;
+}
+.h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: $color-text-heading;
+    margin: 0;
+}
+.h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: $color-text-heading;
+    margin: 0;
+    
+}
+
+p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+.p-1 {
+    font-size: 16px;
+    font-weight: 400;
+    color: $text-color-paragraph;
+    line-height: 28px;
+    margin: 0;
+    padding: 0;
+}
+.p-2 {
+    font-size: 16px;
+    font-weight: 300;
+    color: $text-color-paragraph;
+    line-height: 28px;
+    margin: 0;
+    padding: 0 !important;
+}
+.p-3 {
+    font-size: 15px;
+    font-weight: 300;
+    color: $text-color-paragraph;
+    line-height: 28px;
+    margin: 0;
+    padding: 0 !important;
+}
+.p-white {
+    font-size: 16px;
+    font-weight: 300;
+    color: $color-white;
+    line-height: 28px;
+    margin: 0;
+    padding: 0 !important;
+}
+
+.link{
+    &.blue{
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: right;
+        letter-spacing: 0.438275px;
+        color: #0096EA;
+        text-decoration: none;
+    }
+    
+    &.underline{
+        text-decoration-line: underline;
+    }
+
+    &.small{
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+.title-1{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 62px;
+}
+.title-2{
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 130%;
+    margin-bottom: 40px;
+}

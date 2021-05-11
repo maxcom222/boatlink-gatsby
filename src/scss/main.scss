@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/spacing";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+@import "pages/_all_pages";
+@import "pages/home";
+
+@import "components/buttons";
+@import "components/shapes";
+@import "components/form";
+@import "components/auto_complete";
+@import "components/accordion";
+
+@import "layout/header";
+@import "layout/footer";
+
+@import "base/media";

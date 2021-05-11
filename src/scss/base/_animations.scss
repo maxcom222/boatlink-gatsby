@@ -1,0 +1,24 @@
+// Shape Animation
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes up-dawn {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}

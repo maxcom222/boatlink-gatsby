@@ -1,0 +1,80 @@
+
+.item-boat {
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0px 5.84367px 43.8275px rgba(103, 122, 170, 0.2);
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+
+    img{
+        width: 100%;
+    }
+
+    &:hover {
+        box-shadow: 0 20px 20px 0 rgba(0,0,0,0.15);
+        transform: translateY(-10px);
+    }
+
+    .boat-name{
+        font-weight: 500;
+        font-size: 20.4528px;
+        line-height: 27px;
+        margin: 10px 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .boat-attr{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 18px 10px;
+
+        p{
+            font-weight: 500;
+            font-size: 14.6092px;
+            line-height: 20px;
+            margin: 0;
+        }
+    }
+
+    .boat-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 18px 16px;
+
+        .boat-price{
+            margin: 0;
+            font-weight: 500;
+            font-size: 20.4528px;
+            line-height: 27px;
+        }
+        .boat-unit{
+            margin: 0;
+            font-weight: 500;
+            font-size: 14.6092px;
+            line-height: 20px;
+            letter-spacing: 0.471988px;
+            color: #9EA4B1;
+        }
+
+        .boat-review{
+            display: flex;
+            align-items: center;
+            .boat-review-counts{
+                font-weight: 500;
+                font-size: 14.6092px;
+                line-height: 20px;
+                letter-spacing: 0.471988px;
+                color: #9EA4B1;
+                margin: 6px 0 0;
+            }
+        }
+    }
+}
+
+.navbar-toggler{
+    border: none;
+    z-index: 100;
+}

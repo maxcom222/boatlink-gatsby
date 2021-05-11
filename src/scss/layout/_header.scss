@@ -1,0 +1,99 @@
+// Navbar
+.navbar {
+    position: absolute;
+    width: 100%;
+    padding: .2rem;
+    z-index: 100;
+
+    .navbar-logo{
+        margin-right: 30px;
+    }
+
+    .navbar-logo-mobile{
+        display: none;
+    }
+    .nav-item {
+        margin: 0;
+
+        .nav-link {
+            margin: 0;
+            padding: 2px;
+            margin-right: 40px;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20px;
+            color: #fff;
+            border-top: solid transparent 3px;
+            border-bottom: solid transparent 3px;
+            &:hover {
+                color: #0096EA;
+                border-bottom: solid #0096EA 3px;
+            }
+        }
+
+        .nav-btn-download{
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+            margin-left: 10px;
+            color: #fff;
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+
+    // Dropdown Menu
+    .nav-item:hover > .dropdown-menu {
+        display: block;
+    }
+    .dropdown .dropdown-menu {
+        border: $color-white;
+        box-shadow: 0 4px 20px 0 rgba(0,0,0,0.1);
+        padding: 0;
+    }
+    .dropdown .dropdown-menu a {
+        padding: 15px 5px 15px 20px;
+        font-size: 14px;
+        font-weight: 400;
+        color: $color-text-dark;
+        transition: all 0.2s ease-in-out;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #f6f6f6;
+        }
+
+        &:hover {
+            color: $color-white;
+            background-color: $color-blue-light;
+            border: none;
+            &:not(:last-child) {
+                border-bottom: 1px solid $color-blue-light;
+            }
+        }
+    }
+
+    .dropdown-toggle:after {
+        content: none;
+    }
+
+    .navbar-nav{
+        > li.nav-item{
+            &:nth-child(5){
+                display: none;
+            }
+        }
+    }
+    
+
+    .download-app-wrapper{
+        display: none;
+    }
+
+}
+
+// Slider 
+.slider {
+    height: 1000px;
+    position: relative;
+}

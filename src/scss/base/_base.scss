@@ -1,0 +1,18 @@
+html{
+    overflow-x: hidden;
+}
+
+@media (min-width: 1200px){
+    .container {
+        max-width: 1300px;
+    }
+
+    .container-small{
+        max-width: 1040px;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
